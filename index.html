@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Web Site</title>
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo">TRAVEL</h1>
+        <ul class="navlinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/about.html">About Us</a></li>
+            <li><a href="./pages/tours.html">Tours</a></li>
+            <li class="ctn"><a href="./pages/contact.html">Contact Us</a></li>
+        </ul>
+        <img src="./img/menu.png" alt="" class="menuBtn">
+    </nav>
+    <header>
+        <div class="headerContent">
+            <h2 class="headerTitle">Explore The Colorful Place in Sri Lanka</h2>
+            <div class="line"></div>
+            <h1 class="headerDesc">A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/siripade.JPG" alt="">
+                <h4>Siripade</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./img/camp.jpg" alt="">
+                <h4>Camping</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="exploreContent">
+            <h1>Explore Island Stories</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam expedita, nihil quibusdam voluptatum
+                eveniet velit exercitationem in, ipsum ipsa ducimus accusantium corporis molestias voluptas dolorem? Sit
+                ea
+                nisi voluptate quae.</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+    <footer>
+        <p>123 cross lane, Colombo, Sri Lanka | phone: +9412121215 | email: travel@lanka.com </p>
+        <p>© 2021 All Rights Reserved</p>
+        <p>Design by Reshan Gayantha</p>
+    </footer>
+    <script>
+        const menuBtn = document.querySelector('.menuBtn');
+        const navLinks = document.querySelector('.navlinks');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobileMenu')
+        })
+    </script>
+
+</body>
+
+</html>

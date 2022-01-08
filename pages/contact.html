@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel | Contact Us</title>
+    <link rel="stylesheet" href="../app.css">
+    <link rel="stylesheet" href="../style/contact.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo">TRAVEL</h1>
+        <ul class="navlinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./tours.html">Tours</a></li>
+            <li class="ctn"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <img src="../img/menu.png" alt="" class="menuBtn">
+    </nav>
+    <header>
+        <div class="headerContent">
+            <h2 class="headerTitle">Contact</h2>
+        </div>
+    </header>
+    <section class="contact">
+
+
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon">
+                        <img src="../img/location.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>123 cross lane,<br> Colombo,<br> Sri Lanka </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="../img/phone.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+9412121215</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="../img/email.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>travel@lanka.com </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h3>Send Message</h3>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Subject</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="" id="" cols="50" rows="5"></textarea>
+                        <span>Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <a href="#" class="ctn">Send</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <p>123 cross lane, Colombo, Sri Lanka | phone: +9412121215 | email: travel@lanka.com </p>
+        <p>© 2021 All Rights Reserved</p>
+        <p>Design by Reshan Gayantha</p>
+    </footer>
+    <script>
+        const menuBtn = document.querySelector('.menuBtn');
+        const navLinks = document.querySelector('.navlinks');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobileMenu')
+        })
+    </script>
+</body>
+
+</html>

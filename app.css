@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style: none;
+}
+body,html{
+    overflow-x: hidden;
+}
+.navbar{
+    background-color: #484872;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:px;
+    color: whitesmoke;
+}
+.logo{
+    padding-left:20px ;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+}
+.navlinks li{
+    margin: 0px 30px;
+    font-weight: 400;
+}
+.menuBtn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.ctn{
+    padding: 8px 15px;
+    border-radius: 50px;
+    background-color: #fc036b;
+    color: whitesmoke;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0px;
+    background-color: #484872;
+    color: whitesmoke;
+    text-align: center;
+}
+footer p{
+    margin: 20px auto;
+}
+@media only screen and (max-width:850px){
+    .menuBtn{
+        display: block;
+    }
+    .navbar{
+        padding: 0px;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        text-shadow: 2px 2px 5px whitesmoke;
+        color: black;
+    }
+    .navlinks{
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+        background-color: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobileMenu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .navlinks li{
+        margin: 30px auto;
+    }
+    footer,footer p{
+        margin: 0px;
+        padding: 5px;
+    }
+    
+}
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.ctn:hover{
+    background-color: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
+}
+a:hover{
+    color: #fc036b;
+    cursor: pointer;
+}

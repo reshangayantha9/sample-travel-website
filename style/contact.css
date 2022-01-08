@@ -1,0 +1,113 @@
+header{
+    width: 100vw;
+    height: 70vh;
+    background-image: url('../img/contact.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    }
+.headerContent{
+        margin-bottom: 150px;
+        text-align: center;
+    }
+.headerTitle{
+        font-size: 15vmin;
+        font-weight: 600; 
+        color: black;
+    }
+h2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 6vmin;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    position: relative;
+    padding: 20px 0px;
+    display: flex;
+    height: 100px;
+}
+.icon img{
+    min-width: 60px;
+    height: 60px;
+}
+.text{
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ h3{
+    font-size: 4vmin;
+    text-align: center;
+    color: #49497e;
+}
+.contactForm{
+    width: 50%;
+    
+}
+
+
+.inputBox{
+    width: 100%;
+    margin-top: 10px;
+}
+input{
+    width: 100%;
+    padding: 5px 100px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid #fc036b;
+    color: black;
+}
+span{
+    font-size: 4vmin;
+    color: #333;
+}
+.ctn{
+    display: block;
+    text-align: center;
+}
+@media only screen and (max-width:850px){
+    .contact{
+        padding: 10px;
+        
+    }
+    .container{
+        flex-direction: column;
+    }
+    .contactForm{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .contactInfo{
+        margin-bottom: 20px;
+    }
+    
+}
